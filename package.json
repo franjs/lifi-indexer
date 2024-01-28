@@ -8,7 +8,9 @@
     "test": "jest",
     "lint": "eslint --ext .ts src",
     "format": "prettier --write \"src/**/*.ts\"",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "up": "docker-compose up -d --build",
+    "down": "docker-compose down"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",

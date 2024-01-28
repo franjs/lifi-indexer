@@ -1,0 +1,39 @@
+services:
+  indexer:
+    build:
+      context: .
+    container_name: lifi-indexer
+    restart: always
+    environment:
+      NODE_ENV: production
+      MODE: indexer
+      MONGODB_URI: mongodb://host.docker.internal:27017/db
+    env_file:
+      - .env
+    depends_on:
+      - mongo_db
+
+  api:
+    build:
+      context: .
+    container_name: lifi-api
+    restart: always
+    environment:
+      NODE_ENV: production
+      MODE: api
+      MONGODB_URI: mongodb://host.docker.internal:27017/db
+    env_file:
+      - .env
+    ports:
+      - 4000:4000
+    depends_on:
+      - mongo_db
+
+  mongo_db:
+    image: mongo
+    container_name: mongo_db
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./db-data/:/data/db/
