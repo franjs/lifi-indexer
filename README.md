@@ -59,6 +59,12 @@ yarn test
 yarn up
 ```
 
+Once the application is running, you can fetch the endpoint at `http://localhost:4000/api/fees-collected` with the tools of your choice. For example, you can use curl:
+
+```sh
+curl http://localhost:4000/api/fees-collected
+```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
