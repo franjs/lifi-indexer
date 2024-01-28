@@ -12,6 +12,12 @@ const configSchema = z.object({
     .string()
     .regex(/^\d+$/)
     .transform((val) => parseInt(val, 10)),
+  MODE: z.enum(["indexer", "api"]).default("indexer"),
+  API_PORT: z
+    .string()
+    .regex(/^\d+$/)
+    .transform((val) => parseInt(val, 10))
+    .optional(),
 });
 
 const result = configSchema.safeParse(process.env);
