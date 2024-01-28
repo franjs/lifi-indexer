@@ -36,7 +36,8 @@ cd lifi-indexer
 yarn install
 ```
 
-4. Create a `.env` file in the root directory of your project. You can use the provided [`.env.example`](.env.example) as a template. Copy the contents of `.env.example` into the `.env` file and replace the placeholder values with your actual values.
+4. Create a `.env` file in the root directory of your project. You can use the provided [`.env.example`](.env.example) as a template.
+Copy the contents of `.env.example` into the `.env` file or replace the placeholder values with your actual values.
 
 ## Running Tests
 
