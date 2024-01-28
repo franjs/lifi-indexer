@@ -9,11 +9,14 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
   },
   "ts-node": {
     "transpileOnly": false,
-    "files": true
+    "files": true,
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }
