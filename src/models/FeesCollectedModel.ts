@@ -9,10 +9,10 @@ export class FeesCollected {
   public integrator!: string;
 
   @prop({ required: true })
-  public integratorFee!: bigint;
+  public integratorFee!: string;
 
   @prop({ required: true })
-  public lifiFee!: bigint;
+  public lifiFee!: string;
 
   @prop({ required: true })
   public blockNumber!: number;

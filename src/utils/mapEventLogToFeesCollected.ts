@@ -8,8 +8,8 @@ export function mapParsedEventToFeeCollected(
   return {
     token: log?.args[0],
     integrator: log?.args[1],
-    integratorFee: BigInt(log?.args[2]),
-    lifiFee: BigInt(log?.args[3]),
+    integratorFee: BigInt(log?.args[2]).toString(),
+    lifiFee: BigInt(log?.args[3]).toString(),
     blockNumber: event.blockNumber,
     txHash: event.transactionHash,
   };
