@@ -35,7 +35,7 @@ describe("GET /api/fees-collected", () => {
     expect(res.body).toEqual(testResponse);
   });
 
-  it("should apply filters send as query params", async () => {
+  it("should apply the filters sent as query params", async () => {
     await request(app).get(
       "/api/fees-collected?limit=10&offset=2&integrator=0xD5e230cEa6dA2F0C62bdeED2Cf85326F1063e27D",
     );
