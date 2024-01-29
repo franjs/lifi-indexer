@@ -1,12 +1,14 @@
 # Working with Events
 
-## LI.FI indexer
+This repository contains the following applications:
+
+### Indexer
 
 An application that stores `FeesCollected` events emitted by `FeesCollected` smart contract on LI.FI's supported EVM chains.
 
 For example on [Polygon](https://polygonscan.com/address/0xbD6C7B0d2f68c2b7805d88388319cfB6EcB50eA9)
 
-## LI.FI API
+### API
 
 A REST api to fetch the data indexed.
 
